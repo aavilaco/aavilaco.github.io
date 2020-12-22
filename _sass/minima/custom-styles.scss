@@ -1,0 +1,33 @@
+// Placeholder to allow defining custom styles that override everything else.
+// (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+/* Style buttons */
+
+.btn {
+    background-color: #2a7ae2;
+    border: none;
+    color: white !important;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+    color: white;
+}
+
+.icon-white {
+    background-color: white;
+    mask: url(assets/images/pdf.svg) no-repeat center;
+    -webkit-mask: url(assets/images/pdf.svg) no-repeat center;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
