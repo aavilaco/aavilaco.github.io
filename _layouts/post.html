@@ -30,9 +30,19 @@ layout: default
     {{ content }}
   </div>
 
+  <ul class="social-media-list" style="display: block;">
+    <li><a rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | escape }}" target="_blank" title="Share on LinkedIn" class="slink">
+      <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+    </a></li>
+    <li><a rel="noopener" href="https://twitter.com/intent/tweet?text=Hello%20world&url={{ page.url | absolute_url | escape }}" target="_blank" title="Share on Twitter" class="slink">
+      <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#twitter' | relative_url }}"></use></svg>
+    </a></li>
+    <li><a rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | escape }}" target="_blank" title="Share on Facebook" class="slink">
+      <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg>
+    </a></li>
+  </ul>
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
